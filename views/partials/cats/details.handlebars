@@ -1,0 +1,14 @@
+<label>{{name}}</label>
+<form class="update-form" action="/cats/{{id}}">
+	{{#if sleepy}}
+		<input type="hidden" name="sleepy" value="0">
+			<button type="submit"> WAKE UP!</button>
+	{{else}}
+		<input type="hidden" name="sleepy" value="1">
+			<button type="submit"> SLEEP TIME!</button>
+	{{/if}}
+</form>
+
+<form class="delete-form" action="/cats/{{id}}">
+	<button type="submit">DELETE!</button>
+</form>
